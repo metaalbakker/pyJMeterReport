@@ -37,7 +37,7 @@ def make_report(data, filename, stats_json, images_list, results_dir):
     # print(work_path)
 
     document = Document(work_path + '/docx_template/pt_testreport_template.docx')
-    document.add_picture(work_path + '/docx_template/schoolmaster.png', width=Cm(9.0))
+    document.add_picture(work_path + '/docx_template/picture.png', width=Cm(9.0))
     last_paragraph = document.paragraphs[-1]
     last_paragraph.alignment = WD_ALIGN_PARAGRAPH.CENTER
 
